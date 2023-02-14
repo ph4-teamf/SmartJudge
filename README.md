@@ -1,5 +1,5 @@
 # SmartJudge
-
+# SmartInn
 #使用言語Python
 #フレームワークStreamlit
 
