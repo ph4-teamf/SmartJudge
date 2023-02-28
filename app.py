@@ -2,6 +2,7 @@
 #ライブラリの読み込み
 import os
 import time
+import datetime
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -15,12 +16,12 @@ select_municipalities = st.selectbox("市区町村", ("北九州市戸畑区", "
 st.write("You selected:", select_municipalities)
 st.markdown("---")
 
-select_Area = st.slider("面積(㎡)", 0, 1999, 25)
-st.write("You selected:",select_Area)
+Area = st.slider("面積(㎡)", 0, 1999, 25)
+st.write("You selected:",Area)
 st.markdown("---")
 
-select_Age = st.slider("築年数", 0, 100, 50)
-st.write("You selected:",select_Age)
+Age = st.slider("築年数", 0, 100, 50)
+st.write("You selected:",Age)
 st.markdown("---")
 
 # select_Age = st.selectbox("築年数", ("1946年", "1946年", "1947年", "1950年", "1951年", "1952年", "1953年",
@@ -38,20 +39,16 @@ st.markdown("---")
 # st.markdown("---")
 
 
-select_NearestStation = st.slider("最寄り駅までの距離(分)", 1, 120, 60)
-st.write("You selected:", select_NearestStation)
+NearestStation = st.slider("最寄り駅までの距離(分)", 1, 120, 60)
+st.write("You selected:", NearestStation)
 st.markdown("---")
 
 
-select_TransactionPrice = st.slider("取引価格", 50000, 149999999, 70000000)
-st.write("You selected:", select_TransactionPrice)
+TransactionPrice = st.slider("取引価格", 50000, 149999999, 70000000)
+st.write("You selected:", TransactionPrice)
 st.markdown("---")
 
-select_TotalFloorArea = st.selectbox("延床面積(㎡)", ("選択肢1", "選択肢2", "選択肢3"))
-st.write("You selected:", select_TotalFloorArea)
-st.markdown("---")
-
-select_TotalFloorArea = st.slider("延床面積(㎡)", 1, 1600, 800)
-st.write("You selected:", select_TotalFloorArea)
+TotalFloorArea = st.slider("延床面積(㎡)", 1, 1600, 800)
+st.write("You selected:", TotalFloorArea)
 st.markdown("---")
 
