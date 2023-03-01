@@ -14,9 +14,6 @@ t = df["取引価格（総額）"]
 x = df.iloc[:, [0, 1, 2, 6, 9]]
 # print(x.head())
 
-# object 型のカラムをダミー変数化
-# x = pd.get_dummies(x)
-# print(x.head())
 # 訓練データと検証データに分ける
 x_train, x_val, t_train, t_val = train_test_split(
     x, t, test_size=0.3, random_state=0)
